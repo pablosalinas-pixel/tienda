@@ -19,7 +19,7 @@ $id_cliente = $_SESSION['usuario_id'] ?? null;
 $miPedido = new Pedido($descripcion, $tipo, $producto, $unidades, $observaciones, $id_cliente);
 
 // ==============
-// NUEVO: Guardar en MySQL
+// Guardar en MySQL
 // ==============
 $guardado_db = false;
 $id_pedido_db = null;

@@ -20,7 +20,7 @@ class Pedido {
         $this->id_cliente = $id_cliente; // ← NUEVO
     }
     
-    // NUEVO: Guardar en base de datos MySQL
+    // Guardar en base de datos
     public function guardarEnDB($db) {
         try {
             // Validar que el cliente existe
