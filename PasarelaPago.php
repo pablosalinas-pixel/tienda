@@ -1,14 +1,11 @@
 <?php
 /**
- * Sistema de Pasarelas de Pago - Propuesta de solución
- * Issue #3: Integración de pasarela de pago segura
- * Fecha: 2026-07-23
- * Estado: DISCUSIÓN - Pendiente de decisión del equipo
+ *Pendiente de decisión del equipo
  */
 
-// ============================================
+// ==============
 // INTERFAZ: Define el contrato para todas las pasarelas
-// ============================================
+// ==============
 interface PasarelaPagoInterface {
     /**
      * Iniciar un nuevo proceso de pago

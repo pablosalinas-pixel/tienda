@@ -1,7 +1,6 @@
 <?php
 /**
- * Ubicación: C:\xampp\htdocs\tienda\confirmar_pago.php
- * Página que recibe al usuario después de "pagar" en la pasarela simulada
+ * Página que vera el usuario después de "pagar"
  */
 
 require_once 'verificar_sesion.php';
@@ -65,12 +64,12 @@ if (empty($token)) {
             </div>
             <p>Gracias por tu preferencia. Pronto recibirás los detalles de tu pedido.</p>
         <?php else: ?>
-            <div class="icono-error">❌</div>
-            <h1>Hubo un problema</h1>
+            <div class="error">❌</div>
+            <h1>Hubo un problema con su pago</h1>
             <div class="mensaje-error">
                 <?php echo htmlspecialchars($mensaje); ?>
             </div>
-            <p>Si crees que esto es un error, por favor contacta a soporte.</p>
+            <p>Si crees que esto es un error, por favor contacta mientra pueda a soporte.</p>
         <?php endif; ?>
 
         <a href="index.php" class="btn-volver">← Volver a la Tienda</a>
